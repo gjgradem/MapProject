@@ -20,6 +20,8 @@ namespace GoInspMap
         public MainWindow()
         {
             InitializeComponent();
+            marker.Visibility = Visibility.Hidden;
+            ResizeMode = ResizeMode.NoResize;
         }
 
         public float x = 0;
@@ -28,7 +30,7 @@ namespace GoInspMap
 
         public void mouseClicked(object sender, MouseEventArgs e)
         {
-
+            marker.Visibility = Visibility.Visible;
             Point locationFromWindow = this.TranslatePoint(new Point(0, 0), this);
             Point locationFromScreen = this.PointToScreen(locationFromWindow);
 
@@ -36,12 +38,17 @@ namespace GoInspMap
             y = System.Windows.Forms.Cursor.Position.Y - 150;
 
 
-            marker.Margin = new Thickness((x - locationFromScreen.X) * 2, (y - locationFromScreen.Y) * 2, 0, 0);
+            marker.Margin = new Thickness((x - locationFromScreen.X) * 2, (y - locationFromScreen.Y) * 2 - 20, 0, 0);
 
             Console.WriteLine(locationFromScreen.X);
             Console.WriteLine(locationFromScreen.Y);
 
 
+        }
+
+        private void marker_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            marker.Visibility = Visibility.Hidden;
         }
 
 

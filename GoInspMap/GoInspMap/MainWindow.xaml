@@ -1,7 +1,7 @@
 ﻿<Window x:Class="GoInspMap.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow 1" Height="704" Width="473"
+        Title="MainWindow 1" Height="680" Width="450"
 
 
 
@@ -143,7 +143,7 @@
                         </Path.Data>
                     </Path>
                 </Canvas>
-                <Image Source="Pictures/marker.png" Name="marker" ></Image>
+                <Image Source="Pictures/marker.png" Name="marker" MouseRightButtonDown="marker_MouseRightButtonDown" ></Image>
                 <Canvas Name="layer1">
                     <Canvas.RenderTransform>
                         <TranslateTransform X="-191.98951" Y="429.11023"/>
@@ -297,6 +297,9 @@
                 </Canvas>
             </Canvas>
         </Viewbox>
+        <Label Content="GoInsp Map" FontSize="40" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Leftclick to move the marker&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rightclick on the marker to remove it&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>
