@@ -2,9 +2,7 @@ F:\GitHub\MapProject\GoInspMap\GoInspMap\bin\Debug\GoInspMap.exe.config
 F:\GitHub\MapProject\GoInspMap\GoInspMap\bin\Debug\GoInspMap.exe
 F:\GitHub\MapProject\GoInspMap\GoInspMap\bin\Debug\GoInspMap.pdb
 F:\GitHub\MapProject\GoInspMap\GoInspMap\bin\Debug\GMap.NET.Core.dll
-F:\GitHub\MapProject\GoInspMap\GoInspMap\bin\Debug\GMap.NET.WindowsForms.dll
 F:\GitHub\MapProject\GoInspMap\GoInspMap\bin\Debug\GMap.NET.Core.xml
-F:\GitHub\MapProject\GoInspMap\GoInspMap\bin\Debug\GMap.NET.WindowsForms.xml
 F:\GitHub\MapProject\GoInspMap\GoInspMap\obj\Debug\GoInspMap.csprojResolveAssemblyReference.cache
 F:\GitHub\MapProject\GoInspMap\GoInspMap\obj\Debug\MainWindow.baml
 F:\GitHub\MapProject\GoInspMap\GoInspMap\obj\Debug\Pictures\nlmap.baml
@@ -80,3 +78,7 @@ F:\GitHub\MapProject\GoInspMap\GoInspMap\bin\Debug\Microsoft.Practices.ServiceLo
 F:\GitHub\MapProject\GoInspMap\GoInspMap\obj\Debug\GeneratedInternalTypeHelper.g.cs
 F:\GitHub\MapProject\GoInspMap\GoInspMap\obj\Debug\GoInspMap_MarkupCompile.lref
 F:\GitHub\MapProject\GoInspMap\GoInspMap\obj\Debug\App.baml
+F:\GitHub\MapProject\GoInspMap\GoInspMap\obj\Debug\GMapsding.baml
+F:\GitHub\MapProject\GoInspMap\GoInspMap\obj\Debug\GMapsding.g.cs
+F:\GitHub\MapProject\GoInspMap\GoInspMap\bin\Debug\GMap.NET.WindowsPresentation.dll
+F:\GitHub\MapProject\GoInspMap\GoInspMap\bin\Debug\GMap.NET.WindowsPresentation.xml

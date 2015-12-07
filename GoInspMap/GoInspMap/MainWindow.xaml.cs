@@ -9,6 +9,7 @@ using System.Windows.Documents;
 using System.Windows.Navigation;
 using GoInspMap.ViewModel;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace GoInspMap
 {
@@ -21,7 +22,7 @@ namespace GoInspMap
         {
             InitializeComponent();
             marker.Visibility = Visibility.Hidden;
-            ResizeMode = ResizeMode.NoResize;
+            //ResizeMode = ResizeMode.NoResize;
         }
 
         public float x = 0;
@@ -51,6 +52,34 @@ namespace GoInspMap
             marker.Visibility = Visibility.Hidden;
         }
 
+        //private void KeyUp(object sender, KeyEventArgs e)
+        //{
+        //    if (e.Key == Key.Add)
+        //    {
+        //        Matrix m = svg3008.LayoutTransform.Value;
 
+        //        if (m.M11 >= 4)
+        //            return;
+
+        //        m.M11 += 0.5;
+        //        m.M22 += 0.5;
+
+        //        svg3008.LayoutTransform = new MatrixTransform(m);
+        //    }
+
+        //    if (e.Key == Key.Subtract)
+        //    {
+        //        Matrix m = svg3008.LayoutTransform.Value;
+
+        //        if (m.M11 <= 0.5)
+        //            return;
+
+        //        m.M11 -= 0.5;
+        //        m.M22 -= 0.5;
+
+        //        svg3008.LayoutTransform = new MatrixTransform(m);
+        //    }
+
+        }
     }
-}
+

@@ -55,11 +55,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="GMap.NET.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
-      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.1\lib\net40\GMap.NET.Core.dll</HintPath>
+      <HintPath>..\packages\GMap.NET.Presentation.1.7.1\lib\net40\GMap.NET.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="GMap.NET.WindowsForms, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
-      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.1\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
+    <Reference Include="GMap.NET.WindowsPresentation, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.Presentation.1.7.1\lib\net40\GMap.NET.WindowsPresentation.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -94,12 +94,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GMapsding.xaml.cs">
+      <DependentUpon>GMapsding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MarkerTemplate.cs" />
+    <Compile Include="util.cs" />
     <Compile Include="ViewModel\GeoCoordinate.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="WindowMap.xaml.cs">
       <DependentUpon>WindowMap.xaml</DependentUpon>
     </Compile>
+    <Page Include="GMapsding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -151,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\marker.png" />
+    <Resource Include="Pictures\markerRed.png" />
     <Content Include="Pictures\NLMAP.svg" />
     <Resource Include="Pictures\mario.png" />
   </ItemGroup>
